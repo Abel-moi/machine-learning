@@ -28,7 +28,7 @@ if selection == 'Page d\'accueil':
     st.title('PlateSmart')
     st.subheader('IA de reconnaissance de plaques d\'immatriculation')
 
-    st.write("Pour le projet de DeepLearning, nous avons décidé de faire un projet qui peut nous aider dans nos mémoires de fin d'études. Le sujet choisit est un projet ayant pour but de faire une IA qui reconnait et lit le contenu des photographie / images des plaques d\'immatriculation de véhicules. Ce projet nous permet donc d'introduire une IA pouvant reconnaitre un certain type d'objets (les plaques) puis d'extraires un contenu (le contenu des plaques)")
+    st.write("Pour le projet de DeepLearning, nous avons décidé de faire un projet qui peut nous aider dans nos mémoires de fin d'études. Le sujet choisit est un projet ayant pour but de faire une IA qui reconnait et lit le contenu des photographie / images des plaques d\'immatriculation de véhicules. Ce projet nous permet donc d'introduire une IA pouvant reconnaitre un certain type d'objets (les plaques) puis d'extraires un contenu (le contenu des plaques). Concrètement, l'app peut être utilisé par exemple pour ldes radars en cas d'exces de vitesse, ou des recherches + spécifiques")
     
     lottie = load_lottie("https://assets5.lottiefiles.com/packages/lf20_it6c3dgk.json")
     st_lottie(lottie, height = 250, key = "coding")
