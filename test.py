@@ -45,11 +45,17 @@ if selection == 'Page d\'accueil':
 # Page d'analyse de données
 elif selection == 'Application Web':
     st.title('Page de l\'application Web')
-    lottie = load_lottie("https://assets9.lottiefiles.com/packages/lf20_G6Lxp3nm1p.json")
-    st_lottie(lottie, height = 250, key = "coding")
+    
+    col1, col2 = st.columns([1,3])
+    
+    with col1:
+        lottie= load_lottie("https://assets9.lottiefiles.com/packages/lf20_G6Lxp3nm1p.json")
+        st_lottie(lottie, height = 250, key = "coding")
     # ajouter le code pour l'analyse de données
-    st.subheader('Fonctionnement')
-    st.write("Le but de l'application étant de reconnaitre et lire des plaques d'immatriculation de véhicules, il parait évident que le bot se doit de savoir ce qu'est une plaque. Pour ce faire, il a du s'entrainer de nombreux cycle (INSERER LE PROCEDE DE L'ENTRAINEMENT DU BOT). Apres avoir repérer la plaque, il doit maintenant extraire le contenu de cette derniere, à savoir les caracteres et les chiffres figurant dessus. Enfin il les notes et les affiches pour que l'on puisse bien vérifier s'il n'y a pas eu d'erreur lors du traitement de la plaque.")
+    
+    with col2:
+        st.subheader('Fonctionnement')
+        st.write("Le but de l'application étant de reconnaitre et lire des plaques d'immatriculation de véhicules, il parait évident que le bot se doit de savoir ce qu'est une plaque. Pour ce faire, il a du s'entrainer de nombreux cycle (INSERER LE PROCEDE DE L'ENTRAINEMENT DU BOT). Apres avoir repérer la plaque, il doit maintenant extraire le contenu de cette derniere, à savoir les caracteres et les chiffres figurant dessus. Enfin il les notes et les affiches pour que l'on puisse bien vérifier s'il n'y a pas eu d'erreur lors du traitement de la plaque.")
     
     st.subheader('Demonstration')
     
